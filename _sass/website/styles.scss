@@ -1,0 +1,38 @@
+.list-group h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#menu-aulas {
+  border-right: 1px solid rgba(0,0,0,.1);
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+#menu-aulas h2 {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#menu-aulas .nav .nav-item .nav-link {
+  padding: .2rem 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+#menu-aulas .nav .nav-item .nav-link.active {
+  font-weight: 500;
+}
+
+#pagination .previous,
+#pagination .next {
+  width: 49%;
+  padding: 0;
+  margin: 0;
+}
+
+#main h1 {
+  font-weight: 300;
+  font-size: 1.8rem;
+}

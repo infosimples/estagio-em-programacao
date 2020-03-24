@@ -1,0 +1,6 @@
+- numero: 1
+  nome: Configurando um ambiente de desenvolvimento UNIX
+  abreviacao: UNIX
+- numero: 2
+  nome: Mantendo uma história do seu código com Git
+  abreviacao: Git

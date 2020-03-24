@@ -1,0 +1,33 @@
+---
+layout: default
+title: "Estágio em Programação: curso gratuito para alunos de computação"
+description: Este curso foi preparado especialmente para estudantes de cursos de
+  tecnologia ou de computação que desejam começar suas carreiras na área de
+  programação.
+---
+
+<br>
+<br>
+
+<div class="container">
+  <h1>Estágio em Programação</h1>
+
+  <p>Este curso foi preparado especialmente para estudantes de cursos de tecnologia ou de computação que desejam começar suas carreiras como programadores.</p>
+  <p>Você vai aprender e praticar conceitos de computação presentes em muitos estágios e empregos de desenvolvimento de software.</p>
+  <p>Abaixo estão todos os módulos e aulas. Acesse agora mesmo:</p>
+
+  <br>
+
+  {% assign modulos = site.data.modulos | sort: 'numero' %}
+  {% for modulo in modulos %}
+    <div class="list-group">
+      <div class="list-group-item list-group-item-danger"><h2>Módulo {{ modulo.numero }} - {{ modulo.nome }}</h2></div>
+      {% assign aulas = site.aulas | where: 'modulo', modulo.numero | sort: 'numero' %}
+      {% for aula in aulas %}
+        <a href="{{ aula.url }}" class="list-group-item list-group-item-action">{{ modulo.numero }}.{{ aula.numero }} - {{ aula.nome }}</a>
+      {% endfor %}
+    </div>
+    <br>
+  {% endfor %}
+
+</div>
