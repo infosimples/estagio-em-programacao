@@ -5,7 +5,8 @@ collections:
 
 markdown: kramdown
 permalink: pretty
-url: https://infosimples.github.io/estagio-em-programacao/
+url: https://infosimples.github.io
+base_url: /estagio-em-programacao
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
