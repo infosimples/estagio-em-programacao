@@ -24,7 +24,7 @@ description: Este curso foi preparado especialmente para estudantes de cursos de
       <div class="list-group-item list-group-item-danger"><h2>Módulo {{ modulo.numero }} - {{ modulo.nome }}</h2></div>
       {% assign aulas = site.aulas | where: 'modulo', modulo.numero | sort: 'numero' %}
       {% for aula in aulas %}
-        <a href="{{ aula.url }}" class="list-group-item list-group-item-action">{{ modulo.numero }}.{{ aula.numero }} - {{ aula.nome }}</a>
+        <a href="{{ aula.url | absolute_url }}" class="list-group-item list-group-item-action">{{ modulo.numero }}.{{ aula.numero }} - {{ aula.nome }}</a>
       {% endfor %}
     </div>
     <br>
