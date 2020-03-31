@@ -18,10 +18,10 @@ description: "Exercício M01-E02 de UNIX do curso online gratuito Estágio em
 ## Instruções
 
 1. Crie um diretório para a resolução deste exercício, como você fez no
-Exercício 1.
+exercício M01-E01.
 
 2. No diretório do exercício (`~/ep/exercicios/m1/e2`), crie um arquivo com o
-nome `m1-e2.sh`. Assim como no Exercício 1, este arquivo será um shell script.
+nome `m1-e2.sh`. Assim como no exercício M01-E01, este arquivo será um shell script.
 Por isso, você já pode adicionar o **shebang** na primeira linha do arquivo.
 
 3. Escreva um *shell script* (sequência de comandos) que baixa o arquivo HTML da
@@ -55,28 +55,24 @@ e escreve na tela as seguintes linhas:
     opção `--help`. Por exemplo, para conhecer mais sobre o comando `wget`, você
     pode executar `man wget` ou `wget --help` no terminal.
 
-5. Teste o seu script. Para fazer isso:
+4. Teste o seu script. Para fazer isso:
 
     1. Apague arquivos temporários (por exemplo, o arquivo que você baixou da
     Web).
 
-    2. Execute o seu script em um terminal. Valem as mesmas dicas do [Exercício 1](m01-e01.html):
-    verifique se o arquivo do script é **executável** e use o caminho até o script como se fosse o
-    nome de um comando.
+    2. Execute o seu script em um terminal. Valem as mesmas dicas do Exercício
+    1: verifique se o arquivo do script é **executável** e use o caminho até o
+    script como se fosse o nome de um comando.
 
-    3. Verifique se o seu script contou corretamente os números dos termos pedidos.
-    O resultado deverá ser parecido com o exemplo abaixo. Note que os números aqui são apenas
-    exemplos, e não o resultado esperado.
+    3. Verifique se o seu script contou corretamente os números dos termos
+    pedidos. O resultado deverá ser parecido com o exemplo abaixo. Note que os
+    números aqui são apenas exemplos, e não o resultado esperado.
 
         ```text
         Linux: 243
         linux: 20
         linux (case-insensitive): 271
         ```
-6. Quando você estiver satisfeito com o seu script, utilize a ferramenta `ep-cli`
+5. Quando você estiver satisfeito com o seu script, utilize a ferramenta `ep`
    para executar a correção do exercício. Se você não se lembrar como fazer isso, pode consultar
-   as instruções do [Exercício 1](m01-e01.html) ou executar `ep-cli --help` no terminal.
-
-7. Quando você tiver finalizado o exercício, utilize a ferramenta `ep-cli`
-   para enviar o resultado. Se você não se lembrar como fazer isso, pode consultar
-   as instruções do [Exercício 1](m01-e01.html) ou executar `ep-cli --help` no terminal.
+   as instruções do exercício M01-E01.

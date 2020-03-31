@@ -10,118 +10,117 @@ description: "Exercício M01-E05 de UNIX do curso online gratuito Estágio em
 
 ## Objetivos
 
-- Aprender a criar *shell scripts* ou, mais especificamente,
-  [Bash](https://pt.wikipedia.org/wiki/Bash) scripts; e
-- Aprender a usar comandos básicos para a criação de arquivos e diretórios.
+- Praticar o uso de comandos básicos de UNIX através de um jogo de mistério.
+
+## Enunciado
+
+### Assassinato na Linha de Comando
+
+```text
+.OOOOOOOOOOOOOOO @@                                   @@ OOOOOOOOOOOOOOOO.
+OOOOOOOOOOOOOOOO @@                                    @@ OOOOOOOOOOOOOOOO
+OOOOOOOOOO'''''' @@                                    @@ ```````OOOOOOOOO
+OOOOO'' aaa@@@@@@@@@@@@@@@@@@@@"""                   """""""""@@aaaa `OOOO
+OOOOO,""""@@@@@@@@@@@@@@""""                                     a@"" OOOA
+OOOOOOOOOoooooo,                                            |OOoooooOOOOOS
+OOOOOOOOOOOOOOOOo,                                          |OOOOOOOOOOOOC
+OOOOOOOOOOOOOOOOOO                                         ,|OOOOOOOOOOOOI
+OOOOOOOOOOOOOOOOOO @          ASSASSINATO                  |OOOOOOOOOOOOOI
+OOOOOOOOOOOOOOOOO'@           NA                           OOOOOOOOOOOOOOb
+OOOOOOOOOOOOOOO'a'            LINHA                        |OOOOOOOOOOOOOy
+OOOOOOOOOOOOOO''              DE                           aa`OOOOOOOOOOOP
+OOOOOOOOOOOOOOb,..            COMANDO                       `@aa``OOOOOOOh
+OOOOOOOOOOOOOOOOOOo                                           `@@@aa OOOOo
+OOOOOOOOOOOOOOOOOOO|                                             @@@ OOOOe
+OOOOOOOOOOOOOOOOOOO@                               aaaaaaa       @@',OOOOn
+OOOOOOOOOOOOOOOOOOO@                        aaa@@@@@@@@""        @@ OOOOOi
+OOOOOOOOOO~~ aaaaaa"a                 aaa@@@@@@@@@@""            @@ OOOOOx
+OOOOOO aaaa@"""""""" ""            @@@@@@@@@@@@""               @@@|`OOOO'
+OOOOOOOo`@@a                  aa@@  @@@@@@@""         a@        @@@@ OOOO9
+OOOOOOO'  `@@a               @@a@@   @@""           a@@   a     |@@@ OOOO3
+`OOOO'       `@    aa@@       aaa"""          @a        a@     a@@@',OOOO'
+```
+
+
+Aconteceu um assassinato na Cidade do Terminal, e a polícia precisa da sua ajuda.
+
+Para descobrir o culpado, você precisará de acesso a uma linha de comando.
 
 ## Instruções
 
-1. Em primeiro lugar, precisamos criar um diretório para resolver este
-exercício. Já que este passo irá se repetir para os outros exercícios do curso,
-podemos já definir uma convenção que servirá para todos os módulos e exercícios:
-    - Vamos usar o diretório em `~/ep/exercicios`.
+1. Crie um diretório para a resolução deste exercício, como você fez no exercício M01-E01.
 
-    - Para cada módulo **X** (01, 02, 03, ...), vamos criar o diretório
-    `~/ep/exercicios/mX`. Por exemplo: se você está começando agora os exercícios
-    do módulo **m1**, crie o diretório `~/ep/exercicios/m1` usando o seguinte
-    comando dentro do container Docker:
-
-        ```bash
-        mkdir -p ~/ep/exercicios/m1
-        ```
-
-    - Para cada exercício **Y** (01, 02, 03, ...), vamos criar o diretório
-    `~/ep/exercicios/mX/eY`. Por exemplo: se você está começando agora o
-    exercício **m1** do módulo **e1**, crie o diretório `~/ep/exercicios/m1/e1`
-    usando o seguinte comando:
-
-        ```bash
-        mkdir -p ~/ep/exercicios/m1/e1
-        ```
-
-    Depois deste passo, você deverá ter criado o diretório
-    `~/ep/exercicios/m1/e1`, o que pode ser verificado usando o comando `ls`.
-
-2. Dentro do diretório do exercício (`m1/e1`), crie um arquivo de solução
-chamado `m1-e1.sh`. Lembre-se de que você pode criar arquivos pelo terminal
-usando o comando `touch`.
-
-3. Abra o arquivo `m1-e1.sh` com o editor de texto de sua preferência.
-Em seguida, adicione o seguinte conteúdo a este arquivo:
+2. Faça o download do jogo usando os seguintes comandos:
 
     ```bash
-    #!/usr/bin/env bash
+    # Cria uma variável para armazenar o caminho até o diretório do exercício.
+    # Note que não é permitido colocar espaços antes ou depois do sinal de "=".
+    dir_e5=~/ep/exercicios/m1/e5
+    mkdir -p $dir_e5
 
-    # Este arquivo é um shell script vazio.
-    #
-    # A primeira linha deste arquivo (começando com "#!") é conhecida como 'shebang',
-    # e indica que o conteúdo deste arquivo deve ser interpretado pelo executável
-    # 'bash'. Se o arquivo contivesse comandos em Python, por exemplo, o shebang
-    # correto seria '#!/usr/bin/env python', e assim por diante para outras
-    # linguagens.
-    #
-    # Linhas que começam com '#' são apenas comentários.
-    # No restante deste arquivo, você pode escrever linhas de comando que serão
-    # executadas como se você as executasse diretamente no seu terminal.
+    # Download do jogo na forma de um arquivo zip.
+    wget https://github.com/deborasetton/clmystery/archive/pt-BR.zip -O $dir_e5/clmystery.zip
+
+    # Extrai o conteúdo do zip para o diretório clmystery.
+    unzip $dir_e5/clmystery.zip -d $dir_e5/clmystery
+
+    # Renomeia o diretório do mistério.
+    mv $dir_e5/clmystery/clmystery-pt-BR $dir_e5/misterio-init
     ```
 
-4. Leia o conteúdo que foi adicionado ao arquivo com atenção.
-
-5. Neste arquivo, escreva um *shell script*, isto é, uma sequência de comandos,
-   que cria os diretórios e arquivos mostrados na figura abaixo.
-    <br>
-    <br>
-    <br>
-    ![screenshot-w1-e1-2](/assets/images/aulas/m01_e05_fs_tree.png)
-    <br>
-    <br>
-    <br>
-    **Dica 1:** por exemplo, se o objetivo do seu *shell script* fosse
-    simplesmente imprimir a mensagem "Olá, mundo", ele poderia ser algo assim:
+3. Vá até o diretório do jogo:
 
     ```bash
-    #!/usr/bin/env bash
-
-    echo "Olá, mundo"
+    cd ~/ep/exercicios/m1/e5/misterio-init
     ```
-
-    **Dica 2:** cuidado com os caminhos utilizados no script! Neste exercício,
-    utilize apenas caminhos absolutos para evitar possíveis problemas.
-
-5. Teste o seu script. Para fazer isso:
-
-    1. Apague todos os arquivos e/ou diretórios temporários (de teste) que você
-    talvez tenha criado no passo anterior;
-
-    2. Execute o seu script em um terminal. Para fazer isso, supondo que o seu
-    script realmente seja um arquivo executável (veja a dica abaixo)
-    simplesmente use o caminho até o script como se fosse o nome de um comando,
-    como nos exemplos abaixo:
-
-        ```bash
-        # Esta forma de executar o script funciona sempre, independentemente do seu
-        # diretório atual, porque o caminho é absoluto.
-        ~/ep/exercicios/m1/e1/m1-e1.sh
-
-        # Esta outra forma usa um caminho relativo. Ela funciona se você passar
-        # o caminho relativo correto, como neste exemplo.
-        cd ~/ep/exercicios/m1/e1
-        ./m1-e1.sh
-        ```
-
-        **Dica**: certifique-se de que o arquivo é um executável, isto é, que o seu usuário tem
-        a **permissão de execução** para este arquivo (lembre-se do comando `chmod`).
-
-    3. Verifique se o seu script criou os arquivos e diretórios corretamente.
-    Por exemplo: de acordo com a figura, o diretório 'fer' deve ser um link
-    simbólico para o diretório 'fernando'. Isso pode ser verificado com o
-    comando `ls`:
-
-        ![screenshot-w1-e1-2](/assets/images/aulas/m01_e05_ls_out.png)
-
-6. Quando você estiver satisfeito com o seu script, utilize a ferramenta `ep`
-   para executar a correção do exercício:
+4. Leia o arquivo `inicio`. Uma forma de fazer isto é com o seguinte comando:
 
     ```bash
-    ep 1.1
+    cat inicio
     ```
+
+5. Resolva o mistério usando as instruções e pistas fornecidas. Não use um editor de texto para ler os arquivos! A ideia é aprender a usar os
+comandos básicos do Unix para resolver o mistério.
+
+    Aqui está um resumo de alguns comandos que poderão ser úteis (você também pode
+    usar outros além desses):
+
++ `cd`: muda o diretório atual.
++ `ls`: lista arquivos existentes em um diretório.
++ `cat`: imprime o conteúdo de um ou mais arquivos.
++ `head`: imprime as primeiras linhas de um arquivo.
++ `tail`: imprime as últimas linhas de um arquivo.
++ `grep`: busca um texto em um ou mais arquivos. Por padrão, imprime na saída as linhas que continham o texto buscado.
+
+### Dicas
+
+- Não se esqueça de que a maioria dos comandos aceita opções para alterar o
+comportamento (por exemplo, formatar a saída de um jeito diferente). Utilize
+o comando `man` para saber mais sobre as opções aceitas por um comando,
+e.g. `man grep`.
+
+- Se você estiver com dificuldade em algum ponto, consulte os arquivos de
+dicas, em ordem (`dica1`, `dica2`, `dica3`, etc).
+
+### Solução
+
+Para ver a solução, leia o arquivo `solucao`.
+
+### Créditos
+
+A versão original deste mistério foi escrita por [Noah Veltman](http://github.com/veltman).
+
+### Correção do exercício
+
+1. No diretório do exercício (`m1/e5`), crie um arquivo de texto com o nome `m1-e5.txt`.
+
+2. Nesse arquivo, escreva a solução para o mistério, isto é, escreva o nome do assassino que você
+identificou. Por exemplo, se o assassino for "Maria da Silva", o conteúdo do arquivo deverá ser:
+
+    ```text
+    Maria da Silva
+    ```
+
+3. Quando você estiver satisfeito com o seu script, utilize a ferramenta `ep`
+   para executar a correção do exercício. Se você não se lembrar como fazer isso, pode consultar
+   as instruções do exercício M01-E01.

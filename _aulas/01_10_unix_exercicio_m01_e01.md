@@ -109,8 +109,9 @@ Em seguida, adicione o seguinte conteúdo a este arquivo:
         ./m1-e1.sh
         ```
 
-        **Dica**: certifique-se de que o arquivo é um executável, isto é, que o seu usuário tem
-        a **permissão de execução** para este arquivo (lembre-se do comando `chmod`).
+        **Dica**: certifique-se de que o arquivo é um executável, isto é, que o
+        seu usuário tem a **permissão de execução** para este arquivo (lembre-se
+        do comando `chmod`).
 
     3. Verifique se o seu script criou os arquivos e diretórios corretamente.
     Por exemplo: de acordo com a figura, o diretório 'fer' deve ser um link

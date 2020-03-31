@@ -12,116 +12,78 @@ description: "Exercício M01-E03 de UNIX do curso online gratuito Estágio em
 
 - Aprender a criar *shell scripts* ou, mais especificamente,
   [Bash](https://pt.wikipedia.org/wiki/Bash) scripts; e
-- Aprender a usar comandos básicos para a criação de arquivos e diretórios.
+- Aprender a usar comandos básicos para baixar conteúdo da Web;
+- Aprender a usar comandos básicos de busca de palavras em um texto; e
+- Aprender a fazer um shell script que recebe parâmetros.
+
+## Conceitos novos
+
+### Argumentos de um shell script
+
+Um shell script pode ser chamado com argumentos. Todos os termos que você escreve depois do nome do
+script ficam acessíveis dentro do script através das variáveis especiais `$1`, `$2`, etc. São
+criadas tantas variáveis especiais quanto necessário, uma para cada argumento.
+
+Por exemplo, se você criar um script chamado `meu_script.sh` com o conteúdo a seguir:
+
+```bash
+#!/bin/bash
+
+echo "Primeiro parâmetro:" "$1"
+echo "Segundo parâmetro:" "$2"
+```
+
+Em seguida, você pode chamar o script pelo terminal com dois parâmetros da seguinte forma:
+
+```bash
+# Note que os parâmetros são delimitados automaticamente por espaços em branco.
+./meu_script.sh param-1 param-2
+```
+
+E a saída será:
+
+```text
+Primeiro parâmetro: param-1
+Segundo parâmetro: param-2
+```
+
+**Importante:** Como os argumentos são delimitados por espaços em branco, se o seu argumento tiver
+um espaço em branco, é necessário usar aspas em torno do argumento. Por exemplo:
+
+```bash
+./meu_script.sh "Parâmetro 1" "Parâmetro 2"
+```
 
 ## Instruções
 
-1. Em primeiro lugar, precisamos criar um diretório para resolver este
-exercício. Já que este passo irá se repetir para os outros exercícios do curso,
-podemos já definir uma convenção que servirá para todos os módulos e exercícios:
-    - Vamos usar o diretório em `~/ep/exercicios`.
+1. Crie um diretório para a resolução deste exercício, como você fez no exercício M01-E01.
 
-    - Para cada módulo **X** (01, 02, 03, ...), vamos criar o diretório
-    `~/ep/exercicios/mX`. Por exemplo: se você está começando agora os exercícios
-    do módulo **m1**, crie o diretório `~/ep/exercicios/m1` usando o seguinte
-    comando dentro do container Docker:
+2. No diretório do exercício (`~/ep/exercicios/m1/e3`), crie um arquivo com o nome `m1-e3.sh`.
+Assim como no Exercício M01-E01, este arquivo será um shell script. Por isso, você já pode adicionar
+o **shebang** na primeira linha do arquivo.
 
-        ```bash
-        mkdir -p ~/ep/exercicios/m1
-        ```
+3. Escreva um *shell script* (sequência de comandos) que baixa um arquivo de uma URL (a URL deve ser
+passada como primeiro parâmetro do script, e ficará armazenada na variável especial `$1`) e imprime
+o número de ocorrências de um termo qualquer, passado pelo usuário como segundo parâmetro do script
+(isto é, o termo de busca estará na variável especial `$2`). Use a comparação **case-insensitive**.
 
-    - Para cada exercício **Y** (01, 02, 03, ...), vamos criar o diretório
-    `~/ep/exercicios/mX/eY`. Por exemplo: se você está começando agora o
-    exercício **m1** do módulo **e1**, crie o diretório `~/ep/exercicios/m1/e1`
-    usando o seguinte comando:
+    Note que esse exercício é apenas uma generalização do exercício anterior, usando parâmetros ao
+    invés de deixar a URL e o termo de busca especificados diretamente no código do script.
 
-        ```bash
-        mkdir -p ~/ep/exercicios/m1/e1
-        ```
+    Exemplo de execução e saída esperada:
 
-    Depois deste passo, você deverá ter criado o diretório
-    `~/ep/exercicios/m1/e1`, o que pode ser verificado usando o comando `ls`.
+    ![screenshot-w1-e1-2](/assets/images/aulas/m01_e03_out_example.png)
 
-2. Dentro do diretório do exercício (`m1/e1`), crie um arquivo de solução
-chamado `m1-e1.sh`. Lembre-se de que você pode criar arquivos pelo terminal
-usando o comando `touch`.
+4. Teste o seu script. Para fazer isso:
 
-3. Abra o arquivo `m1-e1.sh` com o editor de texto de sua preferência.
-Em seguida, adicione o seguinte conteúdo a este arquivo:
+      1. Apague arquivos temporários (por exemplo, o arquivo que você baixou da Web).
 
-    ```bash
-    #!/usr/bin/env bash
+      2. Execute o seu script em um terminal. Valem as mesmas dicas do exercício M01-E01:
+        verifique se o arquivo do script é **executável** e use o caminho até o script como se fosse o
+        nome de um comando.
 
-    # Este arquivo é um shell script vazio.
-    #
-    # A primeira linha deste arquivo (começando com "#!") é conhecida como 'shebang',
-    # e indica que o conteúdo deste arquivo deve ser interpretado pelo executável
-    # 'bash'. Se o arquivo contivesse comandos em Python, por exemplo, o shebang
-    # correto seria '#!/usr/bin/env python', e assim por diante para outras
-    # linguagens.
-    #
-    # Linhas que começam com '#' são apenas comentários.
-    # No restante deste arquivo, você pode escrever linhas de comando que serão
-    # executadas como se você as executasse diretamente no seu terminal.
-    ```
+      3. Verifique se o seu script contou corretamente as ocorrências do termo passado.
 
-4. Leia o conteúdo que foi adicionado ao arquivo com atenção.
-
-5. Neste arquivo, escreva um *shell script*, isto é, uma sequência de comandos,
-   que cria os diretórios e arquivos mostrados na figura abaixo.
-    <br>
-    <br>
-    <br>
-    ![screenshot-w1-e1-2](/assets/images/aulas/m01_e01_fs_tree.png)
-    <br>
-    <br>
-    <br>
-    **Dica 1:** por exemplo, se o objetivo do seu *shell script* fosse
-    simplesmente imprimir a mensagem "Olá, mundo", ele poderia ser algo assim:
-
-    ```bash
-    #!/usr/bin/env bash
-
-    echo "Olá, mundo"
-    ```
-
-    **Dica 2:** cuidado com os caminhos utilizados no script! Neste exercício,
-    utilize apenas caminhos absolutos para evitar possíveis problemas.
-
-5. Teste o seu script. Para fazer isso:
-
-    1. Apague todos os arquivos e/ou diretórios temporários (de teste) que você
-    talvez tenha criado no passo anterior;
-
-    2. Execute o seu script em um terminal. Para fazer isso, supondo que o seu
-    script realmente seja um arquivo executável (veja a dica abaixo)
-    simplesmente use o caminho até o script como se fosse o nome de um comando,
-    como nos exemplos abaixo:
-
-        ```bash
-        # Esta forma de executar o script funciona sempre, independentemente do seu
-        # diretório atual, porque o caminho é absoluto.
-        ~/ep/exercicios/m1/e1/m1-e1.sh
-
-        # Esta outra forma usa um caminho relativo. Ela funciona se você passar
-        # o caminho relativo correto, como neste exemplo.
-        cd ~/ep/exercicios/m1/e1
-        ./m1-e1.sh
-        ```
-
-        **Dica**: certifique-se de que o arquivo é um executável, isto é, que o seu usuário tem
-        a **permissão de execução** para este arquivo (lembre-se do comando `chmod`).
-
-    3. Verifique se o seu script criou os arquivos e diretórios corretamente.
-    Por exemplo: de acordo com a figura, o diretório 'fer' deve ser um link
-    simbólico para o diretório 'fernando'. Isso pode ser verificado com o
-    comando `ls`:
-
-        ![screenshot-w1-e1-2](/assets/images/aulas/m01_e01_ls_out.png)
-
-6. Quando você estiver satisfeito com o seu script, utilize a ferramenta `ep`
-   para executar a correção do exercício:
-
-    ```bash
-    ep 1.1
-    ```
+5. Quando você estiver satisfeito com o seu script, utilize a ferramenta `ep`
+   para executar a correção do exercício. Se você não se lembrar como fazer isso, pode consultar
+   as instruções do exercício M01-E01.
