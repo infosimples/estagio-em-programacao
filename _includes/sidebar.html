@@ -1,0 +1,32 @@
+{% assign modulo_prev_numero = page.modulo | minus: 1 %}
+{% assign modulo_next_numero = page.modulo | plus: 1 %}
+{% assign aula_prev_numero = page.numero | minus: 1 %}
+{% assign aula_next_numero = page.numero | plus: 1 %}
+{% assign modulos = site.data.modulos | sort: 'numero' %}
+{% for modulo in modulos %}
+  <h2>Módulo {{ modulo.numero }} - {{ modulo.nome }}</h2>
+  <ul class="nav flex-column">
+  {% assign aulas = site.aulas | where: 'modulo', modulo.numero | sort: 'numero' %}
+  {% for aula in aulas %}
+    {% if modulo.numero == page.modulo and aula.numero == aula_next_numero %}
+      {% assign aula_next = aula %}
+    {% elsif modulo.numero == modulo_next_numero and aula.numero == 1 %}
+      {% assign aula_next = aula_next | default: aula %}
+    {% endif %}
+
+    {% if modulo.numero == modulo_prev_numero %}
+      {% assign aula_prev = aula %}
+    {% elsif modulo.numero == page.modulo and aula.numero == aula_prev_numero %}
+      {% assign aula_prev = aula %}
+    {% endif %}
+
+    {% if page.modulo == modulo.numero and page.numero == aula.numero %}
+      {% assign link_class = 'text-danger' %}
+    {% else %}
+      {% assign link_class = 'text-secondary' %}
+    {% endif %}
+    <li class="nav-item"><a class="nav-link {{ link_class }}" href="{{ aula.url | absolute_url }}">{{ aula.modulo }}.{{ aula.numero }} - {{ aula.nome }}</a></li>
+  {% endfor %}
+  </ul>
+  {% if modulo != modulos.last %}<hr>{% endif %}
+{% endfor %}

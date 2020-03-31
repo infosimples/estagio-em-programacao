@@ -1,8 +1,10 @@
 .highlighter-rouge {
   background-color: #eeeeee;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
 }
+
+.highlighter-rouge pre { padding: 1.0rem 0.5rem; }
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

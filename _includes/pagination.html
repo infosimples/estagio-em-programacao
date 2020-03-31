@@ -1,0 +1,20 @@
+<div id="pagination" class="pt-md-3 pb-md-3">
+  <div class="previous d-inline-block text-left">
+    {% if aula_prev %}
+      <a href="{{ aula_prev.url | absolute_url }}" class="text-secondary">
+        <span aria-hidden="true">&laquo;</span> Aula anterior
+        <br>
+        <small>{{ aula_prev.modulo }}.{{ aula_prev.numero }} {{ aula_prev.nome }}</small>
+      </a>
+    {% endif %}
+  </div>
+  <div class="next d-inline-block text-right">
+    {% if aula_next %}
+      <a href="{{ aula_next.url | absolute_url }}" class="text-secondary">
+        Próxima aula <span aria-hidden="true">&raquo;</span>
+        <br>
+        <small>{{ aula_next.modulo }}.{{ aula_next.numero }} {{ aula_next.nome }}</small>
+      </a>
+    {% endif %}
+  </div>
+</div>

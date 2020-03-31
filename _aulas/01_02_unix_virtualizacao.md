@@ -1,5 +1,5 @@
 ---
-layout: aula
+layout: video
 modulo: 1
 numero: 2
 nome: "Virtualização"
