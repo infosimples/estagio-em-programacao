@@ -72,7 +72,7 @@ o número de ocorrências de um termo qualquer, passado pelo usuário como segun
 
     Exemplo de execução e saída esperada:
 
-    ![screenshot-w1-e1-2](/assets/images/aulas/m01_e03_out_example.png)
+    ![screenshot-w1-e1-2]({{ '/assets/images/aulas/m01_e03_out_example.png' | absolute_url }})
 
 4. Teste o seu script. Para fazer isso:
 

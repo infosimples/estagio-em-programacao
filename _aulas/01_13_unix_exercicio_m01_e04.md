@@ -35,7 +35,7 @@ na primeira linha do arquivo.
     "**cd: Descrição do cd...**". A figura abaixo mostra um exemplo completo de execução e da
     saída esperada:
 
-    ![screenshot-w1-e1-2](/assets/images/aulas/m01_e04_out_example.png)
+    ![screenshot-w1-e1-2]({{ '/assets/images/aulas/m01_e04_out_example.png' | absolute_url }})
 
     **Dica:** para cada comando que você for descrever, leia o manual do comando, entenda
     o que ele faz e resuma em suas palavras o que acredita que ele faça. Lembre-se de que a documentação de um comando qualuqer pode ser visualizada usando o comando `man` ou ainda usando a opção `--help`. Por exemplo, para conhecer mais sobre o comando `ls`, você pode executar `man ls` ou `ls --help` no terminal.

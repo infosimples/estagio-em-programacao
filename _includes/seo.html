@@ -1,6 +1,6 @@
   <meta charset="utf-8">
   <meta property="og:locale" content="pt_BR" />
-  <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="{{ '/assets/images/favicon.png' | absolute_url }}" type="image/x-icon">
 
 {% if page.title %}
   <title>{{ page.title }}</title>
@@ -11,16 +11,9 @@
   <meta property="og:description" content="{{ page.description }}" />
 {% endif %}
 
-<link rel="canonical" href="{{ page.url }}" />
-<meta property="og:url" content="{{ page.url }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
 
 {% if page.image %}
   <meta property="og:image" content="{{ page.image }}" />
-{% endif %}
-
-{% if paginator.previous_page %}
-  <link rel="prev" href="{{ paginator.previous_page_path }}" />
-{% endif %}
-{% if paginator.next_page %}
-  <link rel="next" href="{{ paginator.next_page_path }}" />
 {% endif %}

@@ -72,7 +72,7 @@ Em seguida, adicione o seguinte conteúdo a este arquivo:
     <br>
     <br>
     <br>
-    ![screenshot-w1-e1-2](/assets/images/aulas/m01_e01_fs_tree.png)
+    ![screenshot-w1-e1-2]({{ '/assets/images/aulas/m01_e01_fs_tree.png' | absolute_url }})
     <br>
     <br>
     <br>
@@ -118,7 +118,7 @@ Em seguida, adicione o seguinte conteúdo a este arquivo:
     simbólico para o diretório 'fernando'. Isso pode ser verificado com o
     comando `ls`:
 
-        ![screenshot-w1-e1-2](/assets/images/aulas/m01_e01_ls_out.png)
+        ![screenshot-w1-e1-2]({{ '/assets/images/aulas/m01_e01_ls_out.png' | absolute_url }})
 
 6. Quando você estiver satisfeito com o seu script, utilize a ferramenta `ep`
    para executar a correção do exercício:
