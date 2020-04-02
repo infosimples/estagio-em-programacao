@@ -1,6 +1,20 @@
 - numero: 1
   nome: Configurando um ambiente de desenvolvimento UNIX
-  abreviacao: UNIX
 - numero: 2
   nome: Mantendo uma história do seu código com Git
-  abreviacao: Git
+- numero: 3
+  nome: Hello World em Ruby
+- numero: 4
+  nome: Modelando um problema com classes e objetos
+- numero: 5
+  nome: Expressões Regulares (REGEX)
+- numero: 6
+  nome: Bancos de dados relacionais e MySQL
+- numero: 7
+  nome: Programação concorrente
+- numero: 8
+  nome: Frontend com HTML, CSS e JavaScript
+- numero: 9
+  nome: Backend e arquitetura de aplicações Web
+- numero: 10
+  nome: Infraestrutura de aplicações Web

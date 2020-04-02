@@ -4,9 +4,13 @@
 }
 
 #menu-aulas {
-  border-right: 1px solid rgba(0,0,0,.1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
   height: calc(100vh - 4rem);
+  z-index: 1000;
   overflow-y: auto;
+  border-right: 1px solid rgba(0,0,0,.1);
 }
 
 #menu-aulas h2 {
@@ -30,6 +34,11 @@
   width: 49%;
   padding: 0;
   margin: 0;
+}
+
+#main {
+  padding-top: 4rem;
+  min-height: 100vh !important;
 }
 
 #main h1 {
