@@ -71,3 +71,5 @@ armazena o email do usuário é `user.email`.
     ```bash
       ep 2.2
     ```
+
+    > **ATENÇÃO:** ao corrigir os exercícios, ignore warnings da gem `git`.

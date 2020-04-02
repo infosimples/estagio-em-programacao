@@ -59,3 +59,5 @@ fornecendo dois parâmetros:
     ```bash
       ep 2.1
     ```
+
+    > **ATENÇÃO:** ao corrigir os exercícios, ignore warnings da gem `git`.

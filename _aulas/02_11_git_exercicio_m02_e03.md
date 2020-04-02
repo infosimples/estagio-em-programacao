@@ -2,58 +2,65 @@
 layout: exercicio
 modulo: 2
 numero: 11
-nome: "Exercício M02-E01"
-title: "2.11 Aula de Git: Exercício M02-E01 | Estágio em Programação"
+nome: "Exercício M02-E03"
+title: "2.11 Aula de Git: Exercício M02-E03 | Estágio em Programação"
 description: "Exercício M02-E01 de Git do curso online gratuito Estágio em
   Programação."
 ---
 
 ## Objetivos
 
-- Aprender a criar um repositório Git no [GitHub](https://www.github.com); e
-- Aprender a clonar o repositório na máquina local.
+- Aprender a adicionar arquivos ao repositório;
+- Aprender a remover arquivos do repositório;
+- Aprender a criar commits no repositório local; e
+- Aprender a enviar commits para o repositório remoto.
 
 ## Instruções
 
-1. Crie o diretório para a resolução dos exercícios do módulo 2:
+1. Na raiz do repositório (`~/ep/exercicios/m2/ep-m2-repo`), crie o arquivo `a.txt`.
 
-    ```bash
-      mkdir -p ~/ep/exercicios/m2
+2. Adicione este arquivo para o próximo commit, usando o comando `git add`.
+
+3. Crie um commit com a seguinte mensagem:
+
+    ```
+      Adicionado o arquivo a.txt
     ```
 
-2. Nesta aula, não será necessário criar outros diretórios específicos para cada um dos exercícios
-dentro do diretório criado no passo anterior. Isso é devido ao fato de todos os exercícios se
-baserem em repositório Git, ou seja, em um único diretório.
+4. Na raiz do repositório (`~/ep/exercicios/m2/ep-m2-repo`), crie o arquivo `b.txt`.
 
-3. Crie uma conta no [GitHub](https://www.github.com), caso você ainda não tenha uma.
+5. Adicione este arquivo para o próximo commit, usando o comando `git add`.
 
-4. Através da interface web do GitHub, crie um novo repositório na sua conta com o nome
-`ep-m2-repo`.
+6. Crie um commit com a seguinte mensagem:
 
-5. Agora, você irá clonar o repositório remoto criado no Github para o seu ambiente. O diretório do
-repositório Git deve ser clonado dentro do diretório destinado aos exercícios do módulo 2. Então,
-após clonar o respositório, deve existir o seguinte diretório no seu sistema de arquivos:
-
-    ```bash
-      ~/ep/exercicios/m2/ep-m2-repo
+    ```
+      Segundo commit - adicionado o arquivo b.txt
     ```
 
-6. Para clonar o repositório, deverá ser usado o comando `git clone`. Você pode usar esse comando
-fornecendo dois parâmetros:
-  - O endereço (URL) do repositório remoto (que pode ser encontrado no Github); e
-  - O nome diretório a ser criado localmente para receber o repositório.
+7. __Remova do repositório__ o arquivo `b.txt`. Note que não basta exclui-lo do sistema de arquivos, é preciso removê-lo do controle de versão, usando o comando `git rm`.
 
-    Então, use o comando da seguinte forma:
+8. Crie um commit (que remove o arquivo mencionado) com a seguinte mensagem:
 
-    ```bash
-      git clone <repositorio> <diretorio>
+    ```
+      Arquivo b.txt removido
     ```
 
-    **Dica:** para fazer o clone do GitHub, utilize a opção __HTTPS__ ao invés de __SSH__. Isso vai
-    facilitar o acesso ao repositório de dentro e de fora do container Docker.
+9. Usando o comando `git push`, envie os commits criados para o repositório remoto no GitHub. Tenha certeza de que a branch local chama-se `master` (você pode usar o comando `git status` para verificar) e que a branch do repositório remoto seja `origin/master`.
 
-7. Utilize a ferramenta de correção automática do `ep` para verificar se está tudo certo.
+10. Utilize a ferramenta de correção automática do `ep` para verificar se está tudo certo.
 
     ```bash
-      ep 2.1
+      ep 2.3
     ```
+
+    > **ATENÇÃO:** ao corrigir os exercícios, ignore warnings da gem `git`.
+
+### Dica
+
+Caso você cometa algum erro ao criar commits, os commandos `git checkout`, `git reset` e `git commit --amend` podem ser úteis, dependendo do caso. Pesquise como utilizá-los, caso necessário.
+
+Esses comandos podem ajudar a resolver, por exemplo, casos de:
+
+- Mensagem errada de commit;
+- Arquivos com nomes errados;
+- Arquivos adicionados ou removidos incorretamente.
