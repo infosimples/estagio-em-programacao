@@ -1,0 +1,2 @@
+class FullPrinter < Printer
+end

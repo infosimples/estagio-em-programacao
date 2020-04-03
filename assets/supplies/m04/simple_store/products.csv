@@ -1,0 +1,10 @@
+klass,title,barcode,price,manufacturer_code,expiration_date,url
+PhysicalProduct,'Coffee Table',p0,200,0,2015-03-20,
+PhysicalProduct,'Office Chair',p1,535.27,0,2015-03-20,
+PhysicalProduct,'Telephone',p2,62.5,0,2015-03-20,
+FreshProduct,'Apple',f0,5.70,0,2015-03-20,
+FreshProduct,'Banana',f1,2.90,0,2015-03-20,
+FreshProduct,'Strawberry',f2,8.00,0,2015-03-20,
+DigitalProduct,'Introduction to OOP Book',d0,87.80,0,2015-03-20,http://google.com
+DigitalProduct,'Game of Thrones - Vols 1-5',d1,500,0,2015-03-20,http://google.com
+DigitalProduct,'The Bible - King James Version',30,9.91,0,2015-03-20,http://google.com

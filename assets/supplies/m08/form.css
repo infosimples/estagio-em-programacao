@@ -1,0 +1,144 @@
+/**
+ * Estilos para a página de cadastro.
+ */
+
+/*
+ * Estilos gerais da página.
+ * --------------------------------------------------------------- */
+
+body {
+  background-image: url(ps_neutral.png);
+  font-family: 'Lato Light', 'Helvetica Neue', 'Segoe UI', Arial, freesans, sans-serif;
+  font-size: 18px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 35px;
+  padding: 25px 40px;
+  width: 700px;
+}
+
+hr {
+  border: 1px solid #009688;
+  border-bottom: 0px;
+}
+
+input {
+  font-size: 1em;
+}
+
+h1 {
+  font-weight: 200;
+  margin: 0;
+}
+
+/* Classe usada para esconder qualquer elemento do HTML, como as mensagens
+   de erro. */
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Áreas com duas colunas
+ * --------------------------------------------------------------- */
+
+.cols .col {
+  float: left;
+}
+
+.cols .col:not(:first-child) {
+  margin-left: 50px;
+}
+
+.cols:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*
+ * Campos de texto do formulário
+ * --------------------------------------------------------------- */
+
+.text-inputs input {
+  padding: 2px 5px;
+  width: 400px;
+}
+
+.text-inputs label {
+  display: inline-block;
+  width: 250px;
+}
+
+.text-inputs .row {
+  padding: 5px 0;
+}
+
+/*
+ * Campos de grupo do formulário
+ * --------------------------------------------------------------- */
+
+.input-group label {
+  margin: 5px 0;
+  display: block;
+}
+
+.input-group input {
+  margin-right: 8px;
+}
+
+/*
+ * Botões
+ * --------------------------------------------------------------- */
+
+.buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.buttons input {
+  background: #ffffff;
+  border: 1px solid black;
+  box-shadow: none;
+  padding: 5px 20px;
+}
+
+input[type=reset] {
+  border: 1px solid #555;
+  color: #fff;
+  background: #555;
+}
+
+input[type=reset]:hover {
+  background: #444;
+}
+
+input[type=submit] {
+  border: 1px solid #53bf6b;
+  color: #fff;
+  background: #53bf6b;
+}
+
+input[type=submit]:hover {
+  background: #49A55E;
+}
+
+/*
+ * Mensagens de erro
+ * --------------------------------------------------------------- */
+
+.error {
+  color: #0000ff;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 0px;
+  padding: 10px 0px 0px 5px;
+}
+
+.text-inputs .error {
+  margin-left: 250px;
+  padding: 0px 0px 0px 5px;
+}

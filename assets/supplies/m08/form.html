@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="form.css" rel="stylesheet" type="text/css" />
+
+  <!-- Título da página -->
+  <title>Cadastre-se</title>
+</head>
+<body>
+  <div class="content">
+
+    <h1>Cadastre-se no nosso site</h1>
+    <hr>
+
+    <p>
+      Preencha os campos abaixo para realizar o seu cadastro e ficar por dentro
+      das novidades:
+    </p>
+
+    <!-- Início do formulário -->
+    <form id="sign-up" method="get">
+
+      <!-- Campos de texto -->
+      <div class="text-inputs">
+        <div class="row group-for-name">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <span class="error hidden error-blank">Não pode ficar em branco.</span>
+        </div>
+        <div class="row group-for-email">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <span class="error hidden error-blank">Não pode ficar em branco.</span>
+            <span class="error hidden error-invalid">Não é válido.</span>
+        </div>
+        <div class="row group-for-password">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+            <span class="error hidden error-blank">Não pode ficar em branco.</span>
+        </div>
+        <div class="row group-for-password-confirmation">
+            <label for="password-confirmation">Confirme sua senha:</label>
+            <input type="password" id="password-confirmation" name="password-confirmation">
+            <span class="error hidden error-blank">Não pode ficar em branco.</span>
+            <span class="error hidden error-invalid">Não é igual à senha.</span>
+        </div>
+        <div class="row group-for-birthday">
+            <label for="birthday">Data de nascimento:</label>
+            <input type="datetime" id="birthday" name="birthday">
+            <span class="error hidden error-blank">Não pode ficar em branco.</span>
+            <span class="error hidden error-invalid">Não é válido. Formato: dd/mm/yyyy</span>
+        </div>
+      </div>
+
+      <!-- Seleção de tópicos de interesse -->
+      <div class="group-for-interests">
+        <p>Quais são suas áreas de interesse?</p>
+        <div class="input-group">
+          <div class="cols">
+            <div class="col">
+              <label><input type="checkbox" name="interests" value="0">Algoritmos</label>
+              <label><input type="checkbox" name="interests" value="1">Aprendizado de máquina</label>
+              <label><input type="checkbox" name="interests" value="2">Banco de dados</label>
+              <label><input type="checkbox" name="interests" value="3">Engenharia de software</label>
+              <label><input type="checkbox" name="interests" value="4">Hardware</label>
+              <label><input type="checkbox" name="interests" value="5">Inteligência artificial</label>
+            </div>
+            <div class="col">
+              <label><input type="checkbox" name="interests" value="6">Interfaces homem-máquina (UI/UX)</label>
+              <label><input type="checkbox" name="interests" value="7">Linguagens e compiladores</label>
+              <label><input type="checkbox" name="interests" value="8">Métodos formais</label>
+              <label><input type="checkbox" name="interests" value="9">Redes de computadores</label>
+              <label><input type="checkbox" name="interests" value="10">Segurança da informação</label>
+              <label><input type="checkbox" name="interests" value="11">Visão computacional</label>
+            </div>
+          </div>
+        </div>
+        <span class="error hidden error-blank">Selecione pelo menos um interesse.</span>
+      </div>
+
+      <!-- Seleção de frequência de emails -->
+      <div class="group-for-frequency">
+        <p>Com que frequência deseja receber emails informativos?</p>
+        <div class="input-group">
+          <label for="daily">
+            <input type="radio" id="daily" name="frequency" value="daily" />Diariamente
+          </label>
+          <label for="weekly">
+            <input type="radio" id="weekly" name="frequency" value="weekly" />Semanalmente
+          </label>
+          <label for="monthly">
+            <input type="radio" id="monthly" name="frequency" value="monthly" />Mensalmente
+          </label>
+          <label for="never">
+            <input type="radio" id="never" name="frequency" value="never" />Nunca
+          </label>
+        </div>
+        <span class="error hidden error-blank">Selecione a frequência desejada.</span>
+      </div>
+
+      <!-- Botões -->
+      <div class="buttons">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+      </div>
+
+    </form> <!-- Fim do formulário -->
+  </div>
+
+  <!--
+    JavaScript -->
+  <script src="form.js"></script>
+</body>
+</html>
