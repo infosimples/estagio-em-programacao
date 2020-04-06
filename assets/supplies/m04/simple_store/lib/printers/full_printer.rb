@@ -1,2 +1,0 @@
-class FullPrinter < Printer
-end
