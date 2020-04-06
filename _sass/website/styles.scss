@@ -72,6 +72,13 @@
   padding-bottom: 0.75rem;
 }
 
+#main {
+  ol ol, ol ul, ul ol, ul ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 #main blockquote {
   padding: 0 15px;
   color: #777;
