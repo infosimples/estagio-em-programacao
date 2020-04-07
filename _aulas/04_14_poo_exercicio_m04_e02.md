@@ -4,8 +4,8 @@ modulo: 4
 numero: 14
 nome: "Exercício M04-E02"
 title: "4.14 Aula de Ruby: Exercício M04-E02 | Estágio em Programação"
-description: "Exercício M04-E02 de Ruby do curso online gratuito Estágio em
-  Programação."
+description: "Exercício M04-E02 de Programação Orientada a Objetos (POO) do
+  curso online gratuito Estágio em Programação."
 ---
 
 ## Objetivos
