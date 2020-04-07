@@ -11,7 +11,7 @@ class MySQLExercises2
 
   def initialize
     @client = Mysql2::Client.new(
-      host:     'localhost',
+      host:     'epsql',
       database: 'ecommerce_sample',
       username: 'root'
     )
