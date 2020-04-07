@@ -4,7 +4,7 @@ modulo: 2
 numero: 11
 nome: "Exercício M02-E03"
 title: "2.11 Aula de Git: Exercício M02-E03 | Estágio em Programação"
-description: "Exercício M02-E01 de Git do curso online gratuito Estágio em
+description: "Exercício M02-E03 de Git do curso online gratuito Estágio em
   Programação."
 ---
 

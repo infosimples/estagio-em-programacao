@@ -3,9 +3,9 @@ layout: exercicio
 modulo: 7
 numero: 9
 nome: "Exercício M07-E02"
-title: "7.9 Aula de Ruby: Exercício M07-E02 | Estágio em Programação"
-description: "Exercício M07-E02 de Expressões Regulares (REGEX) do curso online
-  gratuito Estágio em Programação."
+title: "7.9 Aula de Threads: Exercício M07-E02 | Estágio em Programação"
+description: "Exercício M07-E02 de Threads (programação concorrente) do curso
+  online gratuito Estágio em Programação."
 ---
 
 ## Objetivos
