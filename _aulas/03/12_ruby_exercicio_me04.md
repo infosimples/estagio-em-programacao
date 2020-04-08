@@ -1,9 +1,9 @@
 ---
 layout: exercicio
 modulo: 3
-numero: 10
+numero: 12
 nome: "Exercício M03-E04"
-title: "3.10 Aula de Ruby: Exercício M03-E04 | Estágio em Programação"
+title: "3.12 Aula de Ruby: Exercício M03-E04 | Estágio em Programação"
 description: "Exercício M03-E04 de Ruby do curso online gratuito Estágio em
   Programação."
 ---
