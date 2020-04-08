@@ -3,7 +3,7 @@ layout: exercicio
 modulo: 5
 numero: 11
 nome: "Exercício M05-E03"
-title: "5.11 Aula de Ruby: Exercício M05-E03 | Estágio em Programação"
+title: "5.11 Aula de REGEX: Exercício M05-E03 | Estágio em Programação"
 description: "Exercício M05-E03 de Expressões Regulares (REGEX) do curso online
   gratuito Estágio em Programação."
 ---
