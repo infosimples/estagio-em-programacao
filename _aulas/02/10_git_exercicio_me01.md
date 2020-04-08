@@ -1,9 +1,9 @@
 ---
 layout: exercicio
 modulo: 2
-numero: 9
+numero: 10
 nome: "Exercício M02-E01"
-title: "2.9 Aula de Git: Exercício M02-E01 | Estágio em Programação"
+title: "2.10 Aula de Git: Exercício M02-E01 | Estágio em Programação"
 description: "Exercício M02-E01 de Git do curso online gratuito Estágio em
   Programação."
 ---
