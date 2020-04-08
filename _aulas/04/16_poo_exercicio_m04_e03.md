@@ -1,9 +1,9 @@
 ---
 layout: exercicio
 modulo: 4
-numero: 15
+numero: 16
 nome: "Exercício M04-E03"
-title: "4.15 Aula de Classes e Objetos: Exercício M04-E03 | Estágio em Programação"
+title: "4.16 Aula de Classes e Objetos: Exercício M04-E03 | Estágio em Programação"
 description: "Exercício M04-E03 de Programação Orientada a Objetos (POO) do
   curso online gratuito Estágio em Programação."
 ---
