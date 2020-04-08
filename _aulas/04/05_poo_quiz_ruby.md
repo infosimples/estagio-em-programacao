@@ -3,7 +3,7 @@ layout: quiz
 modulo: 4
 numero: 5
 nome: "Quiz sobre POO com Ruby"
-title: "4.5 Aula de Ruby: Quiz sobre POO com Ruby | Estágio em Programação"
+title: "4.5 Aula de Classes e Objetos: Quiz sobre POO com Ruby | Estágio em Programação"
 description: "Teste seus conhecimentos adquiridos até agora com o Quiz sobre POO com Ruby."
 ---
 
