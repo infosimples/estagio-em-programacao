@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    {% include seo.html %}
+
+    <!-- Styles -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/assets/css/website.css' | absolute_url }}">
+
+    <!-- High priority scripts that should be loaded as soon as possible -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73086932-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-73086932-4');
+    </script>
+  </head>
+  <body class="aula-quiz">
+    <nav class="navbar navbar-dark bg-danger fixed-top">
+      <a class="navbar-brand" href="{{ '' | absolute_url}}">Estágio em Programação</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="menu-aulas" class="col-lg-3 col-xl-2 d-none d-lg-block">
+          {% include sidebar.html %}
+        </div>
+
+        <div id="main" class="col-lg-9 col-xl-10 pb-md-3 pl-md-5">
+
+          {% include pagination.html %}
+
+          <div class="row">
+            <div class="col-xl-10">
+
+              <h1 class="pt-md-3 pb-md-1">{{ page.modulo }}.{{ page.numero }} - {{ page.nome }}</h1>
+
+              {{ content }}
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Low priority scripts should be placed at the end of the document so the
+         pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/scripts/website.js' | absolute_url }}"></script>
+  </body>
+</html>
+
