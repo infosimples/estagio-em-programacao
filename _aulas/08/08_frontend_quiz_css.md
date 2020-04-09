@@ -1,9 +1,9 @@
 ---
 layout: quiz
 modulo: 8
-numero: 7
+numero: 8
 nome: "Quiz sobre CSS"
-title: "8.7 Aula de Frontend: Quiz sobre CSS | Estágio em Programação"
+title: "8.8 Aula de Frontend: Quiz sobre CSS | Estágio em Programação"
 description: "Teste seus conhecimentos adquiridos até agora com o Quiz sobre CSS."
 ---
 
