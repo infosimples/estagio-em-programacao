@@ -1,9 +1,9 @@
 ---
 layout: exercicio
 modulo: 6
-numero: 12
+numero: 17
 nome: "Exercício M06-E02"
-title: "6.12 Aula de SQL: Exercício M06-E02 | Estágio em Programação"
+title: "6.17 Aula de SQL: Exercício M06-E02 | Estágio em Programação"
 description: "Exercício M06-E02 de Bancos de Dados e SQL do curso online
   gratuito Estágio em Programação."
 ---
