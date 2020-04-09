@@ -1,9 +1,9 @@
 ---
 layout: exercicio
 modulo: 8
-numero: 9
+numero: 12
 nome: "Recursos adicionais"
-title: "8.9 Aula de Frontend: Recursos adicionais | Estágio em Programação"
+title: "8.12 Aula de Frontend: Recursos adicionais | Estágio em Programação"
 description: "Essa é uma lista de recursos adicionais interessantes para quem
   quer se aprofundar em desenvolvimento web."
 ---

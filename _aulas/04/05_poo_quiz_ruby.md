@@ -7,4 +7,4 @@ title: "4.5 Aula de Classes e Objetos: Quiz sobre POO com Ruby | Estágio em Pro
 description: "Teste seus conhecimentos adquiridos até agora com o Quiz sobre POO com Ruby."
 ---
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpCAYZFrF7Q-zyuK2c8z4RkojUIf-gTCI7UHCx4zy9WaG8VA/viewform?embedded=true" width="100%" height="1126" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpCAYZFrF7Q-zyuK2c8z4RkojUIf-gTCI7UHCx4zy9WaG8VA/viewform?embedded=true" width="100%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>

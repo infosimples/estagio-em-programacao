@@ -1,9 +1,9 @@
 ---
 layout: exercicio
 modulo: 8
-numero: 10
+numero: 13
 nome: "Exercício M08-E01"
-title: "8.10 Aula de Frontend: Exercício M08-E01 | Estágio em Programação"
+title: "8.13 Aula de Frontend: Exercício M08-E01 | Estágio em Programação"
 description: "Exercício M08-E01 de Frontend (HTML, CSS e JavaScript) do curso
   online gratuito Estágio em Programação."
 ---
