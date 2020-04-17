@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 2
 numero: 4
 nome: "Quiz sobre Git"

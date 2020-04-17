@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 6
 numero: 9
 nome: "Quiz sobre queries (parte 1)"

@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 4
 numero: 11
 nome: "Quiz sobre herança (POO)"

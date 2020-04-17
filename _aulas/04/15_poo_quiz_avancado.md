@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 4
 numero: 15
 nome: "Quiz sobre assuntos avançados de POO"

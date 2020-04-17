@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 5
 numero: 11
 nome: "Quiz sobre grupos de captura com REGEX"

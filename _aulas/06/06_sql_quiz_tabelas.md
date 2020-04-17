@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 6
 numero: 6
 nome: "Quiz sobre tabelas"

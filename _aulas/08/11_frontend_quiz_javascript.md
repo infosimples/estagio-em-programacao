@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 8
 numero: 11
 nome: "Quiz sobre JavaScript"

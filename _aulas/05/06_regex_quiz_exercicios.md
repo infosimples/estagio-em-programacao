@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 5
 numero: 6
 nome: "Quiz com exercícios sobre REGEX"

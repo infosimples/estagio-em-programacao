@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 3
 numero: 5
 nome: "Quiz sobre ferramentas úteis de Ruby"

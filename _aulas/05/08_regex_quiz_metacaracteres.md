@@ -1,5 +1,5 @@
 ---
-layout: quiz
+layout: conteudo_geral
 modulo: 5
 numero: 8
 nome: "Quiz sobre metacaracteres com REGEX"

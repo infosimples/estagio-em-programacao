@@ -1,7 +1,7 @@
 ---
 layout: conteudo_geral
-modulo: 1
-numero: 4
+modulo: 11
+numero: 1
 nome: "Criação do seu ambiente"
 title: "1.4 Aula de UNIX: Ambiente de Desenvolvimento | Estágio em Programação"
 description: "Aprenda a criar um ambiente de desenvolvimento baseado em Docker
