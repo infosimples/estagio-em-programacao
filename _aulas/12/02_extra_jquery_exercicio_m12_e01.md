@@ -27,7 +27,7 @@ Você deve acessar o "web service" abaixo via jQuery para fazer o preenchimento
 automático da tabela.
 
 ```
-https://infosimples.github.io/estagio-em-programacao/assets/supplies/m08/webservice_items.json
+https://infosimples.github.io/estagio-em-programacao/assets/supplies/m11/webservice_items.json
 ```
 
 Nas células da coluna **Quantidade** você deve usar um campo de texto que o
