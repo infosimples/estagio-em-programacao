@@ -1,0 +1,104 @@
+[
+  {
+    "categoria": "Automóvel",
+    "item": "GM Corsa",
+    "preco": "32000",
+    "estoque": "5"
+  },
+  {
+    "categoria": "Automóvel",
+    "item": "VW Gol",
+    "preco": "42000",
+    "estoque": "3"
+  },
+  {
+    "categoria": "Automóvel",
+    "item": "Fiat Punto",
+    "preco": "44000",
+    "estoque": "1"
+  },
+  {
+    "categoria": "Automóvel",
+    "item": "Ford Ka",
+    "preco": "28000",
+    "estoque": "1"
+  },
+  {
+    "categoria": "Automóvel",
+    "item": "Peugeot 307",
+    "preco": "38000",
+    "estoque": "4"
+  },
+  {
+    "categoria": "Automóvel",
+    "item": "Audi A3",
+    "preco": "62000",
+    "estoque": "7"
+  },
+  {
+    "categoria": "Informática",
+    "item": "MacbookPro 13",
+    "preco": "4800",
+    "estoque": "10"
+  },
+  {
+    "categoria": "Informática",
+    "item": "MacbookPro 15 Retina",
+    "preco": "9600",
+    "estoque": "15"
+  },
+  {
+    "categoria": "Informática",
+    "item": "iMac 27",
+    "preco": "7200",
+    "estoque": "3"
+  },
+  {
+    "categoria": "Informática",
+    "item": "Mac mini",
+    "preco": "2200",
+    "estoque": "4"
+  },
+  {
+    "categoria": "Comida",
+    "item": "Morango Kg",
+    "preco": "6.50",
+    "estoque": "100"
+  },
+  {
+    "categoria": "Comida",
+    "item": "Laranja Kg",
+    "preco": "1.25",
+    "estoque": "150"
+  },
+  {
+    "categoria": "Comida",
+    "item": "Uva Kg",
+    "preco": "7.50",
+    "estoque": "40"
+  },
+  {
+    "categoria": "Comida",
+    "item": "Batata Kg",
+    "preco": "1.50",
+    "estoque": "100"
+  },
+  {
+    "categoria": "Outros",
+    "item": "Cadeira",
+    "preco": "50",
+    "estoque": "1"
+  },
+  {
+    "categoria": "Outros",
+    "item": "Televisor 40",
+    "preco": "2300",
+    "estoque": "2"
+  },
+  {
+    "categoria": "Outros",
+    "item": "PlayStation 4",
+    "preco": "4000",
+    "estoque": "1"
+  }
+]
