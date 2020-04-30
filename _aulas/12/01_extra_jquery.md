@@ -11,11 +11,11 @@ description: "Aprenda sobre jQuery, uma das bibliotecas de JavaScript mais
 ## Breve apresentação de jQuery
 
 Neste módulo vamos apresentar a biblioteca de JavaScript jQuery. Ela é
-provavelmente uma das bibliotecas mais usadas e populares de todos os tempos em
+provavelmente a biblioteca mais usada e popular de todos os tempos em
 desenvolvimento web.
 
 A biblioteca jQuery (core) teve um papel fundamental no desenvolvimento web ao
-permitir que o desenvolvimento de scripts sem se preocupar com compatibilidade
+permitir o desenvolvimento de scripts sem se preocupar com compatibilidade
 entre diferentes navegadores de Internet.
 
 As especificações de componentes Web têm caminhado para serem cada vez mais
