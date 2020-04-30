@@ -16,6 +16,11 @@ Basta ler rapidamente e, depois, usar como referência o guia abaixo:
 [https://github.com/rubocop-hq/ruby-style-guide](https://github.com/rubocop-hq/ruby-style-guide)
 
 Você pode usar o Rubocop para analisar automaticamente seu código Ruby e
-informar quando você não estiver seguindo algum dos estilos recomendados:
+ser informado quando você não estiver seguindo algum dos estilos recomendados:
 
 [https://github.com/rubocop-hq/rubocop](https://github.com/rubocop-hq/rubocop)
+
+Muitos editores de código permitem que o Rubocop seja executado assim que você
+salva um arquivo de código Ruby. Procure por um plugin de Rubocop para o seu
+editor de código enquanto ainda não estiver usando bem os estilos de
+programação.

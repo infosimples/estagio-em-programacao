@@ -34,8 +34,13 @@ abaixo:
 
 ### Sugestões de materiais e livros
 
+- [The Ruby Programming Wikibook](https://en.wikibooks.org/wiki/Ruby_Programming) (grátis)
 - [Ruby user's guide](https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/index.html) (grátis)
+- [Programming Ruby - Dave Thomas](http://ruby-doc.com/docs/ProgrammingRuby/) (grátis)
+- [Ruby Essentials](http://www.techotopia.com/index.php/Ruby_Essentials) (grátis)
 - [The Little Book of Ruby](http://www.sapphiresteel.com/ruby-programming/The-Little-Book-Of-Ruby.html) (grátis)
-- [Programming Ruby - Dave Thomas](https://pragprog.com/book/ruby4/programming-ruby-1-9-2-0)
 - [Ruby - Aprenda a programar na linguagem mais divertida](https://www.casadocodigo.com.br/products/livro-ruby)
 
+Uma outra sugestão é aprender Ruby de forma prática com Koans:
+
+[http://rubykoans.com/](http://rubykoans.com/)
