@@ -16,7 +16,7 @@ description: "Exercício M14-E01 da parte extra de Ruby on Rails do curso online
 
 ## Instruções
 
-Você vai criar uma rede social onde usuários podem entrar em publicar mensagens.
+Você vai criar uma rede social onde usuários podem entrar e publicar mensagens.
 Qualquer usuário pode ver todas as mensagens publicadas por qualquer usuário.
 
 1. Crie uma aplicação Rails chamada **social**
