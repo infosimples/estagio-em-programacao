@@ -31,8 +31,8 @@ estudá-lo novamente.
 Lista de artigos sugeridos:
 
 - [Introduction](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-- [Download - BootstrapCDN](https://getbootstrap.com/docs/4.4/getting-started/download/#bootstrapcdn).
-  Sugerimos que use o Bootstrap por meio de uma Content Delivery Network.
+- [Download - BootstrapCDN](https://getbootstrap.com/docs/4.4/getting-started/download/#bootstrapcdn)
+  (sugerimos que use o Bootstrap por meio de uma Content Delivery Network)
 - [Layout - Overview](https://getbootstrap.com/docs/4.4/layout/overview/)
 - [Layout - Grid system](https://getbootstrap.com/docs/4.4/layout/grid/)
 
