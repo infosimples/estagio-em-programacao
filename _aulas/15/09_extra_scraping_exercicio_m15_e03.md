@@ -10,15 +10,24 @@ description: "Aprenda sobre Scraping do curso online
 
 ## Scrapers dependentes de sessão
 
-O próximo tipo de scraper é aquele que depende da sessão do agente, isto é, o agente precisa armazenar os cookies enviados pelo servidor e trocar esses cookies com o servidor a cada requisição.
+O próximo tipo de scraper é aquele que depende da sessão do agente, isto é, o
+agente precisa armazenar os cookies enviados pelo servidor e trocar esses
+cookies com o servidor a cada requisição.
 
-Normalmente, se uma das etapas da extração envolve fazer login em um site, este é um indicativo de que será necessário manter uma sessão. Contudo, existem outros casos em que não é necessário fazer login, mas é necessário manter uma sessão. Um destes casos é o gerenciamento de carrinhos em sites de compras que permitem adicionar produtos ao carrinho sem estar logado.
+Normalmente, se uma das etapas da extração envolve fazer login em um site,
+este é um indicativo de que será necessário manter uma sessão. Contudo, existem
+outros casos em que não é necessário fazer login, mas é necessário manter uma
+sessão. Um destes casos é o gerenciamento de carrinhos em sites de compras que
+permitem adicionar produtos ao carrinho sem estar logado.
 
-Por padrão, o Mechanize automaticamente já realiza o gerenciamento dos cookies e os envia para o servidor a cada requisição.
+Por padrão, o Mechanize automaticamente já realiza o gerenciamento dos cookies
+e os envia para o servidor a cada requisição.
 
 ### Exemplo
 
-Um exemplo deste tipo de scraper é um programa que adiciona produtos ao carrinho de compras e depois imprime o valor total do carrinho. Veja um exemplo no código abaixo:
+Um exemplo deste tipo de scraper é um programa que adiciona produtos ao
+carrinho de compras e depois imprime o valor total do carrinho. Veja um
+exemplo no código abaixo:
 
 ```ruby
   require 'mechanize'
@@ -49,10 +58,15 @@ Um exemplo deste tipo de scraper é um programa que adiciona produtos ao carrinh
   puts agent.page.parser.css('strong.valor-total').first.text
 ```
 
-Analise o código deste exemplo e tente reproduzi-lo passo-a-passo no console (IRB), para ver como ele funciona, conhecer melhor os métodos que foram usados e qual é a lógica que foi implementada.
+Analise o código deste exemplo e tente reproduzi-lo passo-a-passo no console
+(IRB), para ver como ele funciona, conhecer melhor os métodos que foram usados
+e qual é a lógica que foi implementada.
 
-O que aconteceria se adicionássemos um item ao carrinho usando um agente do Mechanize e, depois, para adicionar o segundo item, criássemos um novo agente do Mechanize? Faça testes com o IRB para ver se você acertou!
+O que aconteceria se adicionássemos um item ao carrinho usando um agente do
+Mechanize e, depois, para adicionar o segundo item, criássemos um novo agente
+do Mechanize? Faça testes com o IRB para ver se você acertou!
 
 ### Exercício
 
-Crie um scraper que faz login no Twitter e imprime os tweets mais recentes da timeline do usuário.
+Crie um scraper que faz login no Twitter e imprime os tweets mais recentes da
+timeline do usuário.

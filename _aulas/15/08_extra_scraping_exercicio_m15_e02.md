@@ -10,11 +10,16 @@ description: "Aprenda sobre Scraping do curso online
 
 ## Scraper que interagem com formulários
 
-O segundo tipo de scraper, um pouco mais complexo do que o anterior, é aquele que interage com o site através do preenchimento e envio de formulários. Isso pode acontecer, por exemplo, quando houver a necessidade de preencher formulários de pesquisa, de cadastro ou de login. Geralmente, o envio de dados na internet é feito através de requisições POST.
+O segundo tipo de scraper, um pouco mais complexo do que o anterior,
+é aquele que interage com o site através do preenchimento e envio de formulários.
+Isso pode acontecer, por exemplo, quando houver a necessidade de preencher
+formulários de pesquisa, de cadastro ou de login. Geralmente, o envio de dados
+na internet é feito através de requisições POST.
 
 ### Exemplo
 
-Um exemplo deste tipo de scraper é um programa que faz buscas no Twitter usando a interface Web. Veja um exemplo no código abaixo:
+Um exemplo deste tipo de scraper é um programa que faz buscas no Twitter usando
+a interface Web. Veja um exemplo no código abaixo:
 
 ```ruby
   require 'mechanize'
@@ -49,11 +54,14 @@ Um exemplo deste tipo de scraper é um programa que faz buscas no Twitter usando
   end
 ```
 
-Analise o código deste exemplo e tente reproduzi-lo passo-a-passo no console (IRB), para ver como ele funciona, conhecer melhor os métodos que foram usados e qual é a lógica que foi implementada.
+Analise o código deste exemplo e tente reproduzi-lo passo-a-passo no
+console (IRB), para ver como ele funciona, conhecer melhor os métodos que foram
+usados e qual é a lógica que foi implementada.
 
 ### Exercício
 
-Crie um scraper que imprime os títulos e endereços URL da busca “Brasil” no site do Google:
+Crie um scraper que imprime os títulos e endereços URL da busca “Brasil” no
+site do Google:
 
 <https://www.google.com.br/advanced_search>
 

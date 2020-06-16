@@ -8,13 +8,17 @@ description: "Aprenda sobre Scraping do curso online
   gratuito Estágio em Programação."
 ---
 
-A tarefa de processar um HTML em busca de certos conteúdos é difícil de se executar utilizando apenas funções básicas de processamento de texto como buscas de palavras, substituições ou loops de leitura de caracteres.
+A tarefa de processar um HTML em busca de certos conteúdos é difícil de se
+executar utilizando apenas funções básicas de processamento de texto como
+buscas de palavras, substituições ou loops de leitura de caracteres.
 
-Duas ferramentas são muito importantes no parsing de documentos HTML: **seletores CSS** e **expressões regulares**.
+Dois recursos são muito importantes no parsing de documentos HTML:
+**seletores CSS** e **expressões regulares**.
 
 ### Seletor CSS
 
-Para fazer parsing de HTML utilizando seletores CSS, utiliza-se um parser para Ruby chamado Nokogiri. Sua instalação pode ser realizada com o seguinte comando:
+Para fazer parsing de HTML utilizando seletores CSS, utiliza-se um parser para
+Ruby chamado Nokogiri. Sua instalação pode ser realizada com o seguinte comando:
 
 ```
   gem install nokogiri
@@ -37,8 +41,10 @@ Veja no exemplo abaixo como seria o uso de seletores CSS usando o Nokogiri:
   puts doc.css('meta[itemprop="price"]').first.attr(:content)
 ```
 
-### Expressão regular
+### Expressões regulares (regex)
 
-Expressões regulares são úteis para extrair conteúdos que seguem um certo padrão em um texto.
+Expressões regulares são úteis para extrair conteúdos que seguem um certo
+padrão em um texto.
 
-Ferramenta online para testar expressão regular em Ruby: [rubular](https://rubular.com/).
+Ferramenta online para testar expressão regular em Ruby:
+[rubular](https://rubular.com/).
