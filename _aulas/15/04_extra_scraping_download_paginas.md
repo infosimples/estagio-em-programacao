@@ -16,7 +16,7 @@ requisição definidos no protocolo HTTP.
 
 ### GET
 
-O método GET é usado para recuperar qualquer informação referenciadapor uma URL.
+O método GET é usado para recuperar qualquer informação referenciada por uma URL.
 
 ### POST
 

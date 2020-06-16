@@ -20,7 +20,7 @@ visto que ambos possuem as seguintes características:
   * Podem ser instalados nos sistemas operacionais mais comumente utilizados;
   * Possuem opções flexíveis de customização;
   * Servem como plataforma base para a execução de outras ferramentas mais
-  avançadas e específicas utilizadas na criação de um scraper.
+    avançadas e específicas utilizadas na criação de um scraper.
 
 Há uma infinidade de add-ons disponíveis gratuitamente para estes navegadores,
 com funcionalidades que facilitam enormemente a produção de um software que

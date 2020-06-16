@@ -22,7 +22,7 @@ referência para este tipo de software.
 **Crawlers**: crawler é um software que também extrai dados da saída de um
 programa que tem como objetivo indexar conteúdos. Porém sua navegação é do tipo
 "força bruta", isto é, não há filtros que identificam os links que o software
-acessa. Este comportamento é diferentedo de um scraper, que possui inteligência
+acessa. Este comportamento é diferente do de um scraper, que possui inteligência
 para escolher os links que acessa e a navegação que executa.
 
 **Parsers**: Um parser é um programa que espera receber dados de uma maneira
