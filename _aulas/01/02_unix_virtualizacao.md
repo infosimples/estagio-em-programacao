@@ -27,17 +27,19 @@ Docker.
 Recomendamos que você siga [este tutorial](https://docs.docker.com/get-started/)
 , existente no site oficial do Docker.
 
-No tutorial, você vai chegar em um momento em qeu é solicitado que você execute
+No tutorial, você vai chegar em um momento em que é solicitado que você execute
 o seguinte comando:
 ```bash
 docker run -dp 80:80 docker/getting-started
 ```
-Peço que execute o seguinte comando no lugar do anterior:
+Pedimos que você execute o seguinte comando no lugar do anterior:
 ```bash
 docker run -p 8080:80 docker/getting-started
 ```
-Assim não criamos problemas de aplicações executando em background. Você vai
-poder acessar o resto do tutorial ao entrar na URL [http://localhost:8080](http://localhost:8080)
+Isso evita usar a porta 80 do seu computador, e não criamos problemas de
+aplicações executando em background. Você vai poder acessar o resto do tutorial
+no endereço [http://localhost:8080](http://localhost:8080). É recomendado que
+você complete o tutorial até a seção **Updating our App**.
 
 ## Kubernetes
 
