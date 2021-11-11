@@ -1,5 +1,5 @@
 ---
-layout: conteudo_geral
+layout: exercicio
 modulo: 12
 numero: 2
 nome: "Exercício M12-E01"

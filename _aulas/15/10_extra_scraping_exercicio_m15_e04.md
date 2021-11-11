@@ -1,5 +1,5 @@
 ---
-layout: conteudo_geral
+layout: exercicio
 modulo: 15
 numero: 10
 nome: "Exercício M15-E04"
