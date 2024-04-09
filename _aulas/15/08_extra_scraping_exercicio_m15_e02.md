@@ -18,19 +18,19 @@ na internet é feito através de requisições POST.
 
 ### Exemplo
 
-Um exemplo deste tipo de scraper é um programa que faz buscas no Twitter usando
+Um exemplo deste tipo de scraper é um programa que busca produtos no Ebay usando
 a interface Web. Veja um exemplo no código abaixo:
 
 ```ruby
   require 'mechanize'
 
-  term = 'pokemon'
+  term = 'Macbook'
 
   # Create a Mechanize browser
   agent = Mechanize.new
 
-  # Open the Twitter advanced search form
-  agent.get 'https://twitter.com/search-advanced'
+  # Open the Ebay advanced search form
+  agent.get 'https://www.ebay.com/sch/ebayadvsearch'
 
   # Access the form
   form = agent.page.forms.first
@@ -39,18 +39,18 @@ a interface Web. Veja um exemplo no código abaixo:
   # <form id="example-html-id"> could be accessed with the following code:
   # form = agent.page.form_with(id: 'example-html-id')
 
-  form['q'] = term
+  form['_nkw'] = term
 
   # Submit the form
   form.submit
 
   doc = agent.page.parser
 
-  # Print tweets
-  doc.css('table.tweet').each do |tweet|
-    username = tweet.css('.username').text.gsub(/\s+/, ' ').strip
-    text = tweet.css('.tweet-text').text.gsub(/\s+/, ' ').strip
-    puts "#{username}: #{text}"
+  # Print products
+  doc.css('li.s-item').each do |product|
+    name  = product.css('.s-item__title').text.gsub(/\s+/, ' ').strip
+    price = product.css('.s-item__price').text.gsub(/\s+/, ' ').strip
+    puts "#{name}: #{price}"
   end
 ```
 
