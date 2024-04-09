@@ -68,5 +68,6 @@ do Mechanize? Faça testes com o IRB para ver se você acertou!
 
 ### Exercício
 
-Crie um scraper que faz login no Twitter e imprime os tweets mais recentes da
-timeline do usuário.
+Crie um scraper que faz o login no seguinte site:
+https://practice.expandtesting.com/login
+Exiba a mensagem de sucesso no login e faça o logout.
