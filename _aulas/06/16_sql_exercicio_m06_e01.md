@@ -43,6 +43,8 @@ Antes de começar, precisamos importar o banco de dados, como foi feito nos víd
     # o nome do container de servidor de MySQL que criamos é epsql. Esse nome também é o hostname
     # desse servidor que será acessível por qualquer container conectado na rede epnet.
     ```
+    > **_Obs.:_** Caso você esteja utilizando um dispositivo com arquitetura ARM será necessário substituir `mysql:5.7` por `biarms/mysql:5.7`
+    Ex.: Macbook M1 ou superior
 
     3. Recrie o container `ep` do Estágio em Programação se conectando à rede `epnet`
 
