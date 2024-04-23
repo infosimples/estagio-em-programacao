@@ -69,6 +69,9 @@ servidor de MySQL:
 docker run -p 3306:3306 --name epsql --network epnet -e MYSQL_ALLOW_EMPTY_PASSWORD=yes mysql:5.7
 ```
 
+> **_Obs.:_** Caso você esteja utilizando um dispositivo com arquitetura ARM será necessário substituir `mysql:5.7` por `biarms/mysql:5.7`<br>
+Ex.: Macbook M1 ou superior
+
 ### Container 2 - Terminal bash para Rails
 
 A ideia é usar este container para criar o projeto Rails, instalar gems, rodar
@@ -84,10 +87,24 @@ comandos abaixo nesse container:
 
 ```bash
 mkdir -p ~/ep/exercicios/m9
-gem install rails
+gem install rails -v '6.1.7'
 cd ~/ep/exercicios/m9
 rails new blog --database=mysql --skip-test --skip-spring --skip-action-mailer --skip-action-mailbox --skip-action-cable --skip-javascript
 cd ~/ep/exercicios/m9/blog
+```
+
+Agora será necessário editar o arquivo config/database.yml:
+
+```bash
+# Substitua:
+host: localhost
+# Por:
+host: epsql
+```
+
+Em seguida, basta rodar a linha seguinte para que o banco de dados seja criado:
+
+```bash
 rake db:create db:migrate
 ```
 
