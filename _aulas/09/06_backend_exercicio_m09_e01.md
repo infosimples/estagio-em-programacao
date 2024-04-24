@@ -88,6 +88,7 @@ comandos abaixo nesse container:
 ```bash
 mkdir -p ~/ep/exercicios/m9
 gem install rails -v '6.1.7'
+gem install rake -v '13.2.1'
 cd ~/ep/exercicios/m9
 rails new blog --database=mysql --skip-test --skip-spring --skip-action-mailer --skip-action-mailbox --skip-action-cable --skip-javascript
 cd ~/ep/exercicios/m9/blog
