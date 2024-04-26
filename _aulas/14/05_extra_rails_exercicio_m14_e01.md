@@ -67,5 +67,4 @@ Qualquer usuário pode ver todas as mensagens publicadas por qualquer usuário.
 - Uma mensagem deve ter no mínimo 20 caracteres e no máximo 100 caracteres
 - Ao clicar em "Sair", o usuário volta para a página de login
 - A senha do usuário não pode ser armazenada em texto no banco de dados.
-  [Leia aqui](https://medium.com/@barbolo/sinto-muito-mas-a-sua-senha-pode-estar-comprometida-959368fbfc03)
-  sobre o que você deveria fazer.
+  [Leia aqui](https://blog.yarsalabs.com/storing-passwords-in-databases/) para entender melhor o que você deveria fazer.
