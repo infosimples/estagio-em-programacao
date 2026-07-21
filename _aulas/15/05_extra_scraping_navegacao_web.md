@@ -44,20 +44,28 @@ implementar navegação em um site que armazena sessão, porém sem gerenciar
 cookies. O segundo é esta tentativa implementada com o Mechanize, que realiza
 gerenciamento de cookies automaticamente.
 
+Nos exemplos abaixo usamos o serviço de demonstração
+[httpbingo.org](https://httpbingo.org/), que grava em um cookie o "produto"
+enviado e, ao acessar `/cookies`, devolve os cookies recebidos na requisição.
+Ele simula um "carrinho": o produto só aparece se a sessão (cookie) for mantida
+entre as requisições.
+
 **Navegação sem gerenciamento de cookies**
 
 ```ruby
   require 'net/http'
 
-  # Add a product to the shopping cart
-  uri = URI.parse 'https://www.goldentoys.com.br/carrinho/produto/9742497/adicionar'
+  # "Adiciona um produto ao carrinho" (grava o produto em um cookie).
+  # Net::HTTP.get não guarda cookies nem segue o redirecionamento, então o
+  # carrinho aparecerá vazio no passo seguinte.
+  uri = URI.parse 'https://httpbingo.org/cookies/set?produto=9742497'
   Net::HTTP.get(uri)
 
-  # Open the shopping cart
-  uri  = URI.parse 'https://www.goldentoys.com.br/carrinho/index'
+  # "Abre o carrinho" (lista os cookies enviados na requisição)
+  uri  = URI.parse 'https://httpbingo.org/cookies'
   body = Net::HTTP.get(uri)
 
-  # Write output to html file
+  # Grava a saída em um arquivo html (o carrinho estará vazio: {"cookies": {}})
   File.open('cart-no-cookies.html', 'w') { |f| f.write(body) }
 ```
 
@@ -66,16 +74,16 @@ gerenciamento de cookies automaticamente.
 ```ruby
 require 'mechanize'
 
-# Create a new Mechanize user agent (it's like a web browser instance)
+# Cria um novo user agent do Mechanize (funciona como uma instância de navegador)
 agent = Mechanize.new
 
-# Add a product to the shopping cart
-agent.get 'https://www.goldentoys.com.br/carrinho/produto/9742497/adicionar'
+# "Adiciona um produto ao carrinho": o Mechanize segue o redirecionamento e
+# guarda o cookie automaticamente.
+agent.get 'https://httpbingo.org/cookies/set?produto=9742497'
 
-# Open the shopping cart
+# "Abre o carrinho": como o cookie é reenviado, o produto aparece na resposta.
+agent.get 'https://httpbingo.org/cookies'
 
-agent.get 'https://www.goldentoys.com.br/carrinho/index'
-
-# Write output to html file
+# Grava a saída em um arquivo html (o carrinho conterá o produto 9742497)
 File.open('cart-with-cookies.html', 'w') { |f| f.write(agent.page.body) }
 ```

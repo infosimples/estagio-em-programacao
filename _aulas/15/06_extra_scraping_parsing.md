@@ -30,15 +30,16 @@ Veja no exemplo abaixo como seria o uso de seletores CSS usando o Nokogiri:
   require 'net/http'
   require 'nokogiri'
 
-  # Download a product URL
-  url = 'http://www.goldentoys.com.br/funko-pop-knightmare-batman'
+  # Baixa a página de um produto (usamos o books.toscrape.com, um site feito
+  # justamente para praticar scraping)
+  url = 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'
   body = Net::HTTP.get(URI.parse(url))
 
-  # Parse the body html with Nokogiri
+  # Faz o parsing do html com o Nokogiri
   doc = Nokogiri::HTML(body)
 
-  # Print the price of the product using CSS selector
-  puts doc.css('meta[itemprop="price"]').first.attr(:content)
+  # Imprime o preço do produto usando um seletor CSS
+  puts doc.css('p.price_color').first.text
 ```
 
 ### Expressões regulares (regex)

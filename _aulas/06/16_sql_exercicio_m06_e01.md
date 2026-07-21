@@ -128,7 +128,9 @@ SELECT * FROM products LIMIT 1;
 
 Existem diversos clientes que permitem acessar bancos de dados MySQL com interface gráfica.
 
-Para usuários de macOS, nossa recomendação é o [Sequel Pro](https://www.sequelpro.com/).
+Para usuários de macOS, nossa recomendação é o [Sequel Ace](https://sequel-ace.com/),
+o sucessor de código aberto e mantido ativamente do antigo Sequel Pro. Uma boa
+alternativa multiplataforma é o [TablePlus](https://tableplus.com/).
 
 Para usuários de outros sistemas operacionais, não temos experiência suficiente para recomendar um
 cliente. Entretanto, temos algumas sugestões.

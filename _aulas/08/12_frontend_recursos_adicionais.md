@@ -23,10 +23,10 @@ Essa página lista os recursos externos que foram mencionados durante os vídeos
   [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 - Todo App em JavaScript – Um aplicativo de TODOs (lista de tarefas) escrito usando apenas HTML, CSS e JS:<br>
-  [http://todomvc.com/examples/vanillajs/](http://todomvc.com/examples/vanillajs/)
+  [https://todomvc.com/examples/javascript-es6/dist/](https://todomvc.com/examples/javascript-es6/dist/)
 
 - Todo App em JavaScript (código-fonte) – Repositório no GitHub do aplicativo acima:<br>
-  [https://github.com/tastejs/todomvc/tree/master/examples/vanillajs](https://github.com/tastejs/todomvc/tree/master/examples/vanillajs)
+  [https://github.com/tastejs/todomvc/tree/master/examples/javascript-es6](https://github.com/tastejs/todomvc/tree/master/examples/javascript-es6)
 
-- Tutorial sobre o Chrome Developer Tools – Curso gratuito do Code School em parceria com o Google para ajudá-lo a conhecer mais o Developer Tools:<br>
-  [http://discover-devtools.codeschool.com/](http://discover-devtools.codeschool.com/)
+- Documentação do Chrome DevTools – Referência oficial do Google para conhecer melhor as ferramentas de desenvolvedor do navegador:<br>
+  [https://developer.chrome.com/docs/devtools/](https://developer.chrome.com/docs/devtools/)
