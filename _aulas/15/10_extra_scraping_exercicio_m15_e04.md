@@ -25,10 +25,9 @@ sendo que um deles permite exatamente esse tipo de pesquisa.
 
 ### Exemplo
 
-Foi construído um programa que retorna a latitude e longitude de um determinado local, a partir de um endereço de IP.
-Por exemplo, o endereço de IP "8.8.8.8" (Google)
-
-[37.751, -97.822]. Como exemplo o código abaixo:
+Foi construído um programa que retorna a latitude e longitude aproximadas
+associadas a um endereço de IP. Por exemplo, podemos consultar o endereço de
+IP "8.8.8.8" (Google), como no código abaixo:
 
 ```ruby
   require 'mechanize'
@@ -37,30 +36,29 @@ Por exemplo, o endereço de IP "8.8.8.8" (Google)
   # Create a Mechanize browser
   agent = Mechanize.new
 
-  # Access the GeoPlugin's Geolocation API
-  args = {'ip' => '8.8.8.8'}
-  agent.get 'http://www.geoplugin.net/json.gp', args
+  # Access the ipwho.is Geolocation API
+  agent.get 'https://ipwho.is/8.8.8.8'
 
   # Convert JSON to Ruby Hash
   response = JSON.parse(agent.page.body)
 
-  country   = response['geoplugin_countryName']
-  latitude  = response['geoplugin_latitude']
-  longitude = response['geoplugin_longitude']
+  country   = response['country']
+  latitude  = response['latitude']
+  longitude = response['longitude']
 
   # Print the address lat/lon
   puts "The country is: #{country}"
   puts "The coordinates are:\nlatitude  -> #{latitude}\nlongitude -> #{longitude}\n\n"
 ```
 
-A API do GeoPlugin, assim como muitas APIs atualmente, retorna os resultados
-nos formatos XML ou JSON. Em Ruby, lidar com resultados no formato JSON é
-muito simples. Por isso, o exemplo, que está no código acima foi desenvolvido
-utilizando JSON.
+A API do ipwho.is, assim como muitas APIs atualmente, retorna os resultados
+no formato JSON. Em Ruby, lidar com resultados nesse formato é muito simples.
+Por isso, o exemplo acima utiliza JSON.
 
 Pesquise um pouco mais sobre JSON e veja a documentação da API para entender
-como o programa funciona. Escreva um programa que utiliza essa API da forma
-inversa: recebe um par de coordenadas e imprime o endereço encontrado.
+como o programa funciona. Como desafio adicional, pesquise uma API de
+geocodificação reversa, como o Nominatim do OpenStreetMap, e escreva um
+programa que recebe um par de coordenadas e imprime o endereço encontrado.
 
 ### Exercício
 
